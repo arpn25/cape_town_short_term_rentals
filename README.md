@@ -1,4 +1,5 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python&logoColor=white)](https://www.python.org/)
 
 # Mapping Short-Term Rental Patterns and Housing Pressure Signals in Cape Town
 This repository forms part of my personal **Urban Informatics & Data Science portfolio**.  
