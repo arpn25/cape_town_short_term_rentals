@@ -41,11 +41,37 @@ Cape Town is experiencing housing affordability crisis especially in the rental 
 3. High-Pressure Neighborhoods: Central and mid-range zones (e.g., Ward 115, Ward 54) exhibit the highest pressure.
 4. Policy Implication: Short-term rentals reduce long-term housing availability, contributing to localized affordability stress regardless of price.
 
-## Expected Outcomes
-- Neighborhood ranking by Affordability Pressure Index
-- Maps showing areas of high short-term rental activity and pressure
-- Clear identification of key drivers of housing stress (density, turnover, availability)
-- Static and interactive visualizations
+---
+## Scope & Limitations
+This section outlines the analytical boundaries and assumptions of the project to ensure responsible interpretation of results.
+
+### Scope of This Project
+This study focuses on Airbnb-driven internal housing pressure, analyzing:
+- spatial distribution of listings
+- activity metrics (density, turnover, availability, price)
+- a normalized Affordability Pressure Index (API)
+- neighbourhood-level mapping
+- model-based feature importance
+
+The API measures relative pressure within Cape Town, not absolute housing affordability.
+
+### Limitations
+1. This project uses Airbnb data only. It does not incorporate long-term rent prices, household income, property markets, displacement or eviction rates. Findings are best interpreted as pressure signals, not full affordability profiles.
+2. The API captures internal stress patterns and is a composite of normalized metrics. It does not represent an economic affordability index. It highlights where pressure exists, not how much housing costs.
+3. The analysis reflects a single time slice. It does not capture seasonal fluctuations, year-over-year growth or long-term market shifts.
+4. Airbnb data may contain missing values, inconsistent host reporting and imperfect availability calendars. These factors may introduce uncertainty into turnover and availability metrics.
+5. Neighbourhood aggregation assumes listings impact only their ward, ignoring cross-boundary spillover effects and mixed-use zones with diverse housing markets.
+6. The models explain variation within the constructed index. It does not infer causation, predict rent increases or displacement. They provide interpretation, not forecasting.
+---
+
+## Outputs and Deliverables
+- Neighbourhood-level Affordability Pressure Index (API)
+- Static maps (GeoPandas) showing spatial patterns of short-term rental activity
+- Interactive Folium map combining pressure index and individual listing locations
+- Ranked neighbourhood lists for price, density, turnover, availability, and API
+- Feature importance analysis showing key drivers of internal housing pressure
+- Cleaned and processed datasets for listings, calendar activity, and ward-level aggregates
+- Full notebook workflow demonstrating data cleaning, EDA, spatial analysis, indexing, and modelling
 
 ---
 
